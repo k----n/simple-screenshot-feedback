@@ -13,6 +13,7 @@ import * as styles from "./Feedback.module.css";
 export interface FeedbackProps {
   slackToken: string,
   slackChannel: string,
+  actionMessage: string,
   user: string,
   handleSubmitError: (err: Error) => void;
   location?: locationType;
@@ -28,6 +29,7 @@ interface Coordinates {
 export default function Feedback({
   slackToken,
   slackChannel,
+  actionMessage,
   user,
   handleSubmitError,
   location = "bottom-right",
@@ -210,7 +212,7 @@ export default function Feedback({
     } else {
       return (
         <>
-          <img alt="send" className={styles.feedbackIcon} src={sendIcon}/> Send feedback
+          <img alt="send" className={styles.feedbackIcon} src={sendIcon}/> {actionMessage}
         </>
       )
     }
