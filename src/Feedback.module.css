@@ -86,7 +86,7 @@
 }
 
 .submit {
-  background-color: #BB6BD9;
+  background-color: #00766c;
   color: white;
 }
 
@@ -195,7 +195,7 @@ input:checked + .slider:before {
   position: absolute;
   left: 2px;
   width: 4px;
-  background: #BB6BD9;
+  background: #00766c;
   animation: loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
 

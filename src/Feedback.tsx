@@ -13,6 +13,7 @@ import * as styles from "./Feedback.module.css";
 export interface FeedbackProps {
   slackToken: string,
   slackChannel: string,
+  user: string,
   handleSubmitError: (err: Error) => void;
   location?: locationType;
 }
@@ -27,6 +28,7 @@ interface Coordinates {
 export default function Feedback({
   slackToken,
   slackChannel,
+  user,
   handleSubmitError,
   location = "bottom-right",
 }: FeedbackProps): ReactElement {
@@ -115,7 +117,7 @@ export default function Feedback({
     setIsOpen(false);
     setIsLoading(true);
 
-    const slackText = `📣 Feedback: ${feedbackText}`
+    const slackText = `📣 Feedback from ${user}: ${feedbackText}`
 
     try {
       if (includeScreenshot) {
