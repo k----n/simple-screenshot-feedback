@@ -1,7 +1,0 @@
-src
-examples
-.babelrc
-.gitignore
-webpack.*
-screenshot.gif
-tsconfig.json
