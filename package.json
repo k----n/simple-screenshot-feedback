@@ -63,6 +63,8 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "html2canvas": "^1.0.0-rc.5"
+    "html2canvas": "^1.0.0-rc.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
