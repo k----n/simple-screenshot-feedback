@@ -271,7 +271,7 @@ export default function Feedback({
   const screenshotCoordinates = currentSelection || lastSelection;
 
   return createPortal(
-    <div data-html2canvas-ignore="true">
+    <div data-html2canvas-ignore="true" style={{zIndex: '9999'}} >
       <div
         className={`${styles.root} ${isLoading && styles.rootLoading}`}
         onClick={() => !isLoading && setIsOpen(true)}
