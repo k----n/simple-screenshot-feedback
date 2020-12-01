@@ -133,7 +133,7 @@ export default function Feedback({
       }
     } catch (e) {
       handleSubmitError(e);
-      // resetState();
+      resetState();
       return;
     }
 
