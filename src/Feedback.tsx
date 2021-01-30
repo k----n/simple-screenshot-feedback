@@ -271,9 +271,9 @@ export default function Feedback({
   const screenshotCoordinates = currentSelection || lastSelection;
 
   return createPortal(
-    <div data-html2canvas-ignore="true" className="noPrint">
+    <div data-html2canvas-ignore="true">
       <div
-        className={`${styles.root} ${isLoading && styles.rootLoading}`}
+        className={`${styles.root} ${isLoading && styles.rootLoading} noPrint`}
         onClick={() => !isLoading && setIsOpen(true)}
         style={locationStyles[location].root}
       >
